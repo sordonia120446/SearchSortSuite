@@ -16,9 +16,17 @@ public class Main {
 
         // Quicksort test
         QuickSort qs = new QuickSort(myInts2);
-        int[] sortedArr = qs.quickSort();
-        System.out.println("Quicksort test...");
-        for (int i:sortedArr) {
+        int[] sortedArrByQS = qs.quickSort();
+        System.out.println("\n\nQuicksort test...");
+        for (int i:sortedArrByQS) {
+            System.out.println(i);
+        }
+
+        // Insertionsort test
+        InsertionSort is = new InsertionSort(myInts2);
+        int[] sortedArrByIS = is.insertionSort();
+        System.out.println("\n\nInsertionsort test...");
+        for (int i:sortedArrByIS) {
             System.out.println(i);
         }
     }
